@@ -1,6 +1,6 @@
 {
-  "name": "discord-mirror",
-  "version": "1.0.0",
+  "name": "Discord-mirror",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
