@@ -6,7 +6,7 @@ Simple script in js that mirrors the messages from a channel to another (NO RIGH
 - selfcore library
 
 ## Usage
-Replace in the commended areas:
+Replace in the << >> areas:
 - Authorization Token
 You can find it in the developer tools -> network -> authorization (in the end usually)
 - Channel ID
