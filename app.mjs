@@ -2,18 +2,16 @@ import selfcore from "selfcore";
 
 const client = new selfcore();
 const gateway = new selfcore.Gateway(
-  "<<Authorization Token>>"
+  "<< Authorization Token >>"
 );
 gateway.on("message", (m) => {
-  if (m.channel_id === "<<Channel ID>>") {
-    if (m.attachments.length !== 0){
-     var attachment = m.attachments[0].url ? m.attachments[0].url : null
-    }
-    let message = [m.author.username + ' wrote ' +  m.content + ' - ' + attachment]
-    console.log(message, 'content')
+  if (m.channel_id === "<< Channel ID >>") {
+    let attachment = m.attachments[0] ? m.attachments[0].url : ''
+    let message = [m.content + ' ' + attachment]
+    console.log(message)
 
     client.sendWebhook(
-      "<<Webhook>>",
+      "<< Discord Webhook >>",
       message[0]
     );
   }
