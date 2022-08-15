@@ -6,13 +6,13 @@ const gateway = new selfcore.Gateway(
 );
 gateway.on("message", (m) => {
   if (m.channel_id === "<< Channel ID >>") {
+    let content = m.content
     let attachment = m.attachments[0] ? m.attachments[0].url : ''
-    let message = [m.content + ' ' + attachment]
-    console.log(message)
+    let message = content + ' ' + attachment
 
     client.sendWebhook(
       "<< Discord Webhook >>",
-      message[0]
+      message
     );
   }
 });
