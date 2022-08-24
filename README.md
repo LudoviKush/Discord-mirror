@@ -1,6 +1,9 @@
 # Discord-mirror
 Simple script in js that mirrors the messages from a channel to another (NO RIGHTS NEEDED)
 
+##Warning!
+I found out that the main library used (selfcore) stops working after ~3 hours. I am currently searching for a reliable solution.
+
 ## Requirements
 - Node.js installed
 - selfcore library
